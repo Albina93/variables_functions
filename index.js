@@ -3,7 +3,7 @@ function formatFullName(firstName, lastName) {
   let nameFirst = firstName.charAt(0).toUpperCase() + firstName.slice(1);
   let nameLast = lastName.charAt(0).toUpperCase() + lastName.slice(1);
   if (firstName === "" || lastName === "") {
-    alert("Invalid name");
+    return "Invalid input";
   }
   return `${nameLast} ${nameFirst}`;
 }
@@ -29,7 +29,7 @@ function calculateTotalCost(price, quantity, taxRate) {
 console.log(calculateTotalCost(2, -2, 5));
 console.log(calculateTotalCost("dec", 2, 5));
 console.log(calculateTotalCost(10, 0, 5));
-console.log(calculateTotalCost(10, 2, 5));
+console.log(calculateTotalCost(100, 2, 5));
 
 // Task 3. Functions with Conditional Logic
 
